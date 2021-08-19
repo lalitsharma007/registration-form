@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regestration Form</title>
+    <link rel="stylesheet" href="regform.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Register Here</h2>
+        <form action="noaction.php" class="register">
+            <div class="formgroup">
+                <label for="name1">Name:</label>
+                <br>
+
+                <input type="text" id="name1" name="myname" placeholder="Enter Your Name ">
+                <br><br>
+            </div>
+            <div class="formgroup">
+                <label for="email1">Email:</label>
+                <br>
+                <input type="email" id="email1" name="myemail" placeholder="Enter Your Email ">
+                <br><br>
+            </div>
+            <div class="formgroup">
+                <label for="number1">Mobile No:</label>
+                <br>
+                <input type="number" id="number1" name="mynumber" placeholder="Enter Your Number ">
+                <br><br>
+            </div>
+
+            <div class="formgroup">
+
+                <label for="address1">Address:</label>
+                <br>
+                <input type="text" id="address1" name="myadress" placeholder="Enter Your Adress ">
+                <br><br>
+            </div>
+
+            <div class="formgroup">
+                <label for="trektype1">Trek Type:</label>
+                <br>
+                <select name="myselect" id="trektype1">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <br><br>
+            </div>
+            <div class=>
+                <label for="gender1">Gender:</label>
+                <br>
+                Male <input type="radio" name="mygender" id="gender1">
+                Female <input type="radio" name="mygender" id="geender1">
+                <br><br>
+            </div>
+            <div class="formgroup">
+                <button class="btn">Submit</button>
+            </div>
+
+
+
+
+
+        </form>
+    </div>
+    <script src="regform.js"></script>
+
+</body>
+
+</html>
