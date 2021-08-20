@@ -12,24 +12,24 @@
 <body>
     <div class="container">
         <h2>Register Here</h2>
-        <form action="noaction.php" class="register">
-            <div class="formgroup">
+        <form aciton="#" class="register" name="myForm" onsubmit="return validateForm()" method="post">
+            <div class="formgroup" id="name">
                 <label for="name1">Name:</label>
                 <br>
 
-                <input type="text" id="name1" name="myname" placeholder="Enter Your Name ">
+                <input type="text" id="name1" name="myname" required placeholder="Enter Your Name "><b><span class="formerror"></span></b>
                 <br><br>
             </div>
             <div class="formgroup">
                 <label for="email1">Email:</label>
                 <br>
-                <input type="email" id="email1" name="myemail" placeholder="Enter Your Email ">
+                <input type="email" id="email1" name="myemail" placeholder="Enter Your Email " required><b><span class="formerror"></span></b>
                 <br><br>
             </div>
             <div class="formgroup">
                 <label for="number1">Mobile No:</label>
                 <br>
-                <input type="number" id="number1" name="mynumber" placeholder="Enter Your Number ">
+                <input type="number" id="number1" name="mynumber" placeholder="Enter Your Number " required><b><span class="formerror"></span></b>
                 <br><br>
             </div>
 
@@ -37,14 +37,14 @@
 
                 <label for="address1">Address:</label>
                 <br>
-                <input type="text" id="address1" name="myadress" placeholder="Enter Your Adress ">
+                <input type="text" id="address1" name="myadress" placeholder="Enter Your Adress " required><b><span class="formerror"></span></b>
                 <br><br>
             </div>
 
             <div class="formgroup">
                 <label for="trektype1">Trek Type:</label>
                 <br>
-                <select name="myselect" id="trektype1">
+                <select name="myselect" id="trektype1" required><b><span class="formerror"></span></b>
                     <option value="easy">Easy</option>
                     <option value="medium">Medium</option>
                     <option value="hard">Hard</option>
@@ -54,12 +54,12 @@
             <div class=>
                 <label for="gender1">Gender:</label>
                 <br>
-                Male <input type="radio" name="mygender" id="gender1">
-                Female <input type="radio" name="mygender" id="geender1">
+                Male <input type="radio" name="mygender" id="gender1"required><b><span class="formerror"></span></b>
+                Female <input type="radio" name="mygender" id="geender1"required><b><span class="formerror"></span></b>
                 <br><br>
             </div>
             <div class="formgroup">
-                <button class="btn">Submit</button>
+                <button class="btn" type="submit" value="submit">Submit</button>
             </div>
 
 
@@ -68,8 +68,9 @@
 
         </form>
     </div>
-    <script src="regform.js"></script>
+   
 
 </body>
+ <script src="regform.js"></script>
 
 </html>
