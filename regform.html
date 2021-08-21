@@ -12,54 +12,59 @@
 <body>
     <div class="container">
         <h2>Register Here</h2>
-        <form aciton="#" class="register" name="myForm" onsubmit="return validateForm()" method="post">
-            <div class="formgroup" id="name">
+        <form name ="myForm" action="#" class="register">
+            <div id="name">
                 <label for="name1">Name:</label>
                 <br>
-
-                <input type="text" id="name1" name="myname" required placeholder="Enter Your Name "><b><span class="formerror"></span></b>
+                <input type="text" id="name1" name="myname" placeholder="Enter Your Name ">
                 <br><br>
+                <b><span class="formerror"> </span></b>
             </div>
-            <div class="formgroup">
+            <div id="email">
                 <label for="email1">Email:</label>
                 <br>
-                <input type="email" id="email1" name="myemail" placeholder="Enter Your Email " required><b><span class="formerror"></span></b>
+                <input type="email" id="email1" name="myemail" placeholder="Enter Your Email ">
                 <br><br>
+                <b><span class="formerror"> </span></b>
             </div>
-            <div class="formgroup">
+            <div id="phone">
                 <label for="number1">Mobile No:</label>
                 <br>
-                <input type="number" id="number1" name="mynumber" placeholder="Enter Your Number " required><b><span class="formerror"></span></b>
+                <input type="number" id="number1" name="mynumber" placeholder="Enter Your Number ">
                 <br><br>
+                <b><span class="formerror"> </span></b>
             </div>
 
-            <div class="formgroup">
+            <div id="address">
 
                 <label for="address1">Address:</label>
                 <br>
-                <input type="text" id="address1" name="myadress" placeholder="Enter Your Adress " required><b><span class="formerror"></span></b>
+                <input type="text" id="address1" name="myadress" placeholder="Enter Your Adress ">
                 <br><br>
+                <b><span class="formerror"> </span></b>
             </div>
 
-            <div class="formgroup">
+            <div id="trek">
                 <label for="trektype1">Trek Type:</label>
                 <br>
-                <select name="myselect" id="trektype1" required><b><span class="formerror"></span></b>
+                <select name="myselect" id="trektype1">
                     <option value="easy">Easy</option>
                     <option value="medium">Medium</option>
                     <option value="hard">Hard</option>
                 </select>
                 <br><br>
+                <b><span class="formerror"> </span></b>
             </div>
-            <div class=>
+            <div id="gender">
                 <label for="gender1">Gender:</label>
                 <br>
-                Male <input type="radio" name="mygender" id="gender1"required><b><span class="formerror"></span></b>
-                Female <input type="radio" name="mygender" id="geender1"required><b><span class="formerror"></span></b>
+                Male <input type="radio" name="mygender" id="gender1">
+                Female <input type="radio" name="mygender" id="gender1">
                 <br><br>
+                <b><span class="formerror"> </span></b>
             </div>
             <div class="formgroup">
-                <button class="btn" type="submit" value="submit">Submit</button>
+                <button class="btn" onclick='validateForm()'>Submit</button>
             </div>
 
 
@@ -68,9 +73,8 @@
 
         </form>
     </div>
-   
+    <script src="regform.js"></script>
 
 </body>
- <script src="regform.js"></script>
 
 </html>
